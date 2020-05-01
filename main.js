@@ -1,0 +1,1 @@
+require('./server/index').app.listen(6000);
