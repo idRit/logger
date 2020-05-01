@@ -29,7 +29,7 @@ require('node-watch')('../logs.txt', { recursive: true }, (evt, name) => {
     // console.log(contents);
     let data = [];
     contents.forEach(el => {
-        data.push([el.split(':')[0], el.split(':')[1].split('$')[0], el.split('$ ')[1]]);
+        data.push([el.split('::')[0], el.split('::')[1].split('$')[0], el.split('$ ')[1]]);
     });
     table.setData({
         headers: ['Time-Stamp', 'Service', 'Description'],
